@@ -7,11 +7,11 @@ siempre el principio de cualquier página web-->
 	</head>
 	<!--lo que se muestra como parte de la página web-->
 	<body>
-		<div>
-			<h1><a href="">Django Girls Blog</a></h1>
-		</div>
-	<!--Es un ciclo que te muestra todos los post-->
-	{% for post in posts %}
+	<div>
+        <h1><a href="/">Django Girls Blog</a></h1>
+    </div>
+
+    {% for post in posts %}
         <div>
             <p>published: {{ post.published_date }}</p>
             <h1><a href="">{{ post.title }}</a></h1>
